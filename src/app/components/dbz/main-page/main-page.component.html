@@ -1,0 +1,41 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<!-- <div class="row">
+    <div class="col-xs-6">
+        <h3>Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let personaje of personajes">{{ personaje.nombre }} - {{ personaje.poder | number }}</li>
+        </ul>
+    </div>
+
+    <div class="col-xs-6">
+        <h3>Agregar: {{ nuevoPersonaje.nombre }}</h3>
+        <hr>
+
+        <form (ngSubmit)="agregarPersonaje()">
+            <input type="text" placeholder="Nombre..." class="form-control" name="nombrePersonaje" [(ngModel)]="nuevoPersonaje.nombre">
+            <input type="number" placeholder="Poder..." class="form-control" name="poderPersonaje" [(ngModel)]="nuevoPersonaje.poder">
+
+             [value]="nuevoPersonaje.nombre"
+            (input)="cabiarNombre($event)" 
+
+            <button class="btn btn-success" type="submit">Agregar</button>
+        </form>
+
+    </div>
+
+</div> -->
+
+<div class="row">
+    <div class="col-xs-6">
+        <app-personajes></app-personajes>
+    </div>
+
+    <div class="col-xs-6">
+        <app-agregar [nuevoPersonaje]="nuevoPersonaje"></app-agregar>
+        <!-- Uso del evento output: (onNuevoPersonaje)="function"-->
+    </div>
+
+</div>

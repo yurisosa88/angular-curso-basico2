@@ -1,0 +1,12 @@
+form input {
+    margin: 5px;
+}
+
+form button {
+    text-decoration: none;
+    outline: none;
+}
+
+form button:active {
+    outline: none;
+}
